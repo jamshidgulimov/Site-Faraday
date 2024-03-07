@@ -1,0 +1,51 @@
+.acardion{
+    width: 100%;
+    padding: 20px;
+}
+.contentbx{
+    background: rgba(65, 70, 146, 1);
+    margin: 20px 10px;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.label{
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label img{
+    height: 30x;
+    width: 30px;
+    margin: 0;
+}
+.label h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    width: 85%;
+}
+
+
+.content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    
+}
+
+ .contentbx.active .content{
+    height: 100%;
+
+}
+
+ .contentbx.active .label img{
+    rotate: 180deg;
+    
+}
